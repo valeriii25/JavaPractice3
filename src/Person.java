@@ -67,7 +67,7 @@ public class Person {
         _dateOfBirth = tmp;
     }
     public String getGender() {
-        if (_patronymic.contains("ич")) return "мужской";
+        if (_patronymic.endsWith("ич")) return "мужской";
         return "женский";
     }
     public int getAge() {
