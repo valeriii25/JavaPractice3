@@ -61,7 +61,7 @@ public class Person {
     public void setDate(Scanner scanner) {
         LocalDate tmp;
         do {
-            System.out.println("Введите дату рождения в формате гггг-мм-дд");
+            System.out.println("Введите дату рождения в формате гггг-мм-дд:");
             tmp = isValidDate(scanner.next().trim());
         } while (tmp == null);
         _dateOfBirth = tmp;
